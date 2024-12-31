@@ -119,7 +119,7 @@ USE_TZ = True
 
 import os
 
-STATIC_URL = 'static/'
+STATIC_URL = '/home/anashamza24/dhtproject/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
@@ -128,7 +128,7 @@ CORS_ALLOWED_ORIGINS = [
     'http://192.168.1.251',
 ]
 
-STATIC_ROOT=os.path.join(BASE_DIR,'staticfiles')
+STATIC_ROOT="/home/anashamza24/dhtproject/static"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
