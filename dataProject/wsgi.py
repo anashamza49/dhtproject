@@ -1,16 +1,14 @@
-"""
-WSGI config for dataProject project.
-
-It exposes the WSGI callable as a module-level variable named ``application``.
-
-For more information on this file, see
-https://docs.djangoproject.com/en/4.2/howto/deployment/wsgi/
-"""
-
 import os
+import sys
+
+# Ajouter le chemin du projet
+path = '/home/anashamza24/dhtproject' 
+if path not in sys.path:
+    sys.path.append(path)
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'dataProject.settings')
+# Définir les variables d'environnement
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'dhtproject.settings')
 
 application = get_wsgi_application()
